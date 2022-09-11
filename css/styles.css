@@ -143,6 +143,44 @@
   margin-bottom: 16px;
   text-align: center;
 }
+/*icon*/
+.overlay {
+max-width: 1600px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
+background-image: url(../images/Img\ Overlay.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.list-item-icon::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size:contain ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--light-bg-cl);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+background-image: url(../images/icons.svg#antenna);
+
+}
+.icon-clock::before {
+  background-image: url(../images/icons.svg#clock);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/icons.svg#diagram);
+}
+.icon-astronaut::before {
+  background-image: url(..//images/icons.svg#astronaut);
+}
+
 
 /*social*/
 .socials {
@@ -154,8 +192,13 @@
   gap: 10px;
 }
 .social-link {
+  display: inline-block;
   width: 44px;
   height: 44px;
+  background-color: var(--main-bg-cl);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
 
 }
 
