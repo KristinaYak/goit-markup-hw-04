@@ -129,6 +129,10 @@ margin-top: 4px;
 }
 
 /*footer*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .contacts-adress {
   margin-top: 20px;
@@ -138,7 +142,8 @@ margin-top: 4px;
 
 
 
-.footer-list-item {
+.footer-list-item,
+.socials-item {
   text-align: left;
   display: block;
 
@@ -299,7 +304,7 @@ margin-top: 4px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.main {
+.footer-main {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 700;
@@ -308,7 +313,7 @@ margin-top: 4px;
   letter-spacing: 0.03em;
   color: var(--light-txt-cl);
 }
-.main.activ {
+.footer-main.active {
   color: var(--accent-txt-cl);
 }
 .footer-list-item {
