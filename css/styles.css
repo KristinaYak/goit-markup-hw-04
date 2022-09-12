@@ -8,6 +8,7 @@
   --second-txt-cl: #000000;
   --light-txt-cl: #757575;
   --accent-txt-cl: #2196f3;
+  --second-light-txt-cl: #AFB1B8;
 
   /*Background colors*/
   --main-bg-cl: #ffffff;
@@ -123,6 +124,8 @@
 .feature-list {
   display: flex;
   gap: 30px;
+ 
+
 }
 
 .img {
@@ -135,6 +138,8 @@
   padding: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  
 }
 .team-name {
   margin: 0;
@@ -146,48 +151,69 @@
   text-align: center;
 }
 /*icon*/
-.contacts-link {
-  
-}
+
 .overlay {
-  
+
 max-width: 1600px;
 height: 600px;
 margin-left: auto;
 margin-right: auto;
 
-background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(..//images/backgroundimage.jpg);
+background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4)), 
+url(../images/backgroundimage.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 
 }
 
-.list-item-icon::before {
-  display: block;
-  content: " ";
+
+.list-item-icon {
+  display:block;
+ content: '';
   height: 120px;
+  
   background-size: contain;
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
   background-position: center;
+  
+  justify-content: center;
+  text-align: center;
+  
+ 
   background-color: var(--light-bg-cl);
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.icon-antenna::before {
-background-image: url(..//images/icons.svg#antenna);
+/*робила через before, але не спрацювало, іконка не додавалась
+list-item-icon:: before {
+  display:block;
+ content: '';
+  height: 120px;
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  text-align: center;
+  
+ 
+  background-color: var(--light-bg-cl);
+  border-radius: 4px;
+  margin-bottom: 30px;
 
-}
-.icon-clock::before {
-  background-image: url(../images/icons.svg#clock);
+  .icon-clock::before {
+  background-image: url(..//images/icons.svg#clock);
 }
 
 .icon-diagram::before {
-  background-image: url(../images/icons.svg#diagram);
+  background-image: url(..//images/icons.svg#diagram);
 }
 .icon-astronaut::before {
-  background-image: url(..//images/icons.svg#astronaut);
-}
+  background-image:url(..//images/icons.svg#astronaut);
+}*/
+
+
 
 
 /*social*/
@@ -197,6 +223,13 @@ background-image: url(..//images/icons.svg#antenna);
   justify-content: center;
   text-align: center;
   
+}
+.contacts-link.link {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  color: var(--light-txt-cl); 
 }
 
 
@@ -212,20 +245,22 @@ background-image: url(..//images/icons.svg#antenna);
 }
 
 
-.socials-item {
+
+.socials-item  {
   list-style: none;
-  
-  
 }
-.socials-link {
+.socials-link  {
+
   display: flex;
   width: 44px;
   height: 44px;
- color: #AFB1B8;
+ color: var(--second-light-txt-cl);
  background-color: var(--main-bg-cl);
   justify-content: center;
   align-items: center;
+ 
   border-radius: 50%;
+  
 
 }
 
@@ -253,11 +288,11 @@ background-image: url(..//images/icons.svg#antenna);
 }
 
 
-.clients-link {
+.clients-link  {
   display: flex;
   width: 106px;
   height: 60px;
-  color: #AFB1B8;
+  color:var(--second-light-txt-cl);
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -346,6 +381,7 @@ border-radius: 4px;
 .list-item {
   color: var(--light-txt-cl);
   text-decoration: none;
+ 
 }
 
 .list-item .contact-link:hover,
