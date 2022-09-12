@@ -148,6 +148,18 @@ margin-top: 4px;
   margin-bottom: 9px;
   
 }
+/*icons*/
+.contacts-link {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  color: var(--light-txt-cl);
+}
+.contacts-icon {
+  fill: currentColor;
+  
+}
 
 
 /*Шапка сторінки*/
@@ -259,6 +271,10 @@ margin-top: 4px;
   border-bottom: 1px solid #EEEEEE;
    border-left: 1px solid #EEEEEE;
    border-right: 1px solid #EEEEEE;
+   
+  }
+  .box-shadow {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
   }
 
 .main-title {
@@ -316,3 +332,46 @@ margin-top: 4px;
 .footer-link-item:focus {
   color: var(--accent-txt-cl);
 }
+/*social*/
+.socials-list {
+  display: flex;
+  gap: 10px;
+
+}
+.footer-section {
+  display: flex;
+
+}
+.socials-section {
+  margin-left: 70px;
+}
+.socials-link-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+ color:var(--main-bg-cl);
+ background-color:rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.socials-link-icon:hover,
+.socials-link-icon:focus {
+  background-color: var(--accent-txt-cl);
+
+}
+.socials-link-icon.current {
+  background-color: var(--accent-bg-cl);
+}
+.socials-list {
+  display: flex;
+  gap: 10px;
+
+}
+.socials-title {
+  color: var(--main-bg-cl)
+}
+.socials-icon{
+  fill: currentColor;
+}
+
