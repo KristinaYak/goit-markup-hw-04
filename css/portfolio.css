@@ -292,7 +292,9 @@ align-items: baseline;
   .link-group:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
   }
-  
+  .img {
+    display: block;
+  }
 
  
 
@@ -389,7 +391,17 @@ align-items: baseline;
 
 }
 .socials-title {
-  color: var(--main-bg-cl)
+  color: var(--main-bg-cl);
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 20px;
+
 }
 .socials-icon{
   fill: currentColor;

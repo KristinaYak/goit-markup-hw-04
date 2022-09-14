@@ -349,7 +349,17 @@ align-items: baseline;
 }
 .socials-title {
   color: var(--main-bg-cl);
-  
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 20px;
+
+
 
 }
 .socials-list {
@@ -423,7 +433,8 @@ align-items: baseline;
   margin-left: auto;
 margin-right: auto;
 
-background-image: url(../images/backgroundimage.jpg); 
+
+background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/backgroundimage.jpg); 
 
 
   background-repeat: no-repeat;
