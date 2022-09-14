@@ -40,6 +40,14 @@
 
   background: var(--main-bg-cl);
   border: 1px solid #ececec;
+
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  
 }
 
 .container {
@@ -52,12 +60,7 @@
 
 /*Утиліти*/
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
- 
-}
+
 
 .header-container {
   display: flex;
@@ -74,10 +77,12 @@
   display: flex;
   margin-left: 93px;
   gap: 50px;
+
 }
-.list-contact {
+.list-contact  {
   margin-left: auto;
   
+
 }
 
 
@@ -120,6 +125,12 @@
   text-align: center;
   margin-bottom: 50px;
 }
+.list-item-group {
+  width: 370px;
+
+ 
+
+}
 
 .feature-list {
   display: flex;
@@ -131,6 +142,9 @@
 .img {
   display: block;
 }
+.img-team {
+  display: block;
+}
 
 /*our team*/
 
@@ -139,7 +153,6 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  
 }
 .team-name {
   margin: 0;
@@ -152,35 +165,13 @@
 }
 /*icon*/
 
-.overlay {
-
-max-width: 1600px;
-height: 600px;
-margin-left: auto;
-margin-right: auto;
-
-background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4)), 
-url(../images/backgroundimage.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-
-}
-
-
-.list-item-icon {
-  display:block;
- content: '';
-  height: 120px;
+.list-icon {
+display: flex;
+height: 120px;
   
-  background-size: contain;
-background-repeat: no-repeat;
-  background-position: center;
+ justify-content: center;
+ align-items: center;
   
-  justify-content: center;
-  text-align: center;
-  
- 
   background-color: var(--light-bg-cl);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -220,6 +211,7 @@ list-item-icon:: before {
 .socials {
   display: flex;
   gap: 10px;
+  padding: 0;
   justify-content: center;
   text-align: center;
   
@@ -235,7 +227,7 @@ list-item-icon:: before {
 
 .contacts-icon {
   fill: none;
-  stroke: var(--light-txt-cl);
+  fill: var(--light-txt-cl);
   
   
 }
@@ -279,19 +271,24 @@ list-item-icon:: before {
 
 .clients {
   display: flex;
+  margin: 0;
+  padding: 0;
   gap: 30px;
   justify-content: center;
   
 }
 .clients-item {
   list-style: none;
+  width: 170px;
+  height: 92px;
+
 }
 
 
 .clients-link  {
   display: flex;
-  width: 106px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   color:var(--second-light-txt-cl);
   justify-content: center;
   align-items: center;
@@ -327,9 +324,9 @@ border-radius: 4px;
   margin-bottom: 9px;
 }
 
-.footer-section {
+.footer-nav {
   display: flex;
-
+align-items: baseline;
 }
 
 .socials-link-icon {
@@ -351,21 +348,24 @@ border-radius: 4px;
   background-color: var(--accent-bg-cl);
 }
 .socials-title {
-  color: var(--main-bg-cl)
+  color: var(--main-bg-cl);
+  
+
 }
 .socials-list {
   display: flex;
   gap: 10px;
 
 }
-.socials-section {
+.socials-nav {
   margin-left: 70px;
+
 }
 
 
 /*Menu nav*/
 
-.contact-link {
+.contact-link.link {
   color: var(--light-txt-cl);
   text-decoration: none;
   fill: currentColor;
@@ -376,6 +376,7 @@ border-radius: 4px;
 }
 
 .list-item {
+  display: block;
   color: var(--light-txt-cl);
   text-decoration: none;
  
@@ -408,6 +409,8 @@ border-radius: 4px;
 
 .list-item {
   background: var(--main-bg-cl);
+  width: 270px;
+  
 }
 
 /*section Ефективні рішення для вашого бізнесу*/
@@ -417,8 +420,16 @@ border-radius: 4px;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+margin-right: auto;
 
-  background: var(--secondary-bg-cl);
+background-image: url(../images/backgroundimage.jpg); 
+
+
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-color: var(--secondary-bg-cl);
   text-align: center;
 }
 .section-feature {
@@ -520,13 +531,7 @@ border-radius: 4px;
 .section-team {
   background: var(--light-bg-cl);
 }
-.list-item-team {
-  width: 270px;
-  height: 368px;
-  left: 1115px;
-  top: 1632px;
-  background: var(--main-bg-cl);
-}
+
 .team-name {
   font-family: "Roboto", sans-serif;
   font-style: normal;
